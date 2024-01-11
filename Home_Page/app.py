@@ -25,7 +25,7 @@ st.markdown("""
 with st.sidebar:
 
 # Logo and text beside the logo
-col1, col2 =  st.columns([0.2, 0.7])
+    col1, col2 =  st.columns([0.2, 0.7])
 with col1:
     # Logo Image
     logo = st.image("Home Page\foodstuffs.jpg", width=100)
