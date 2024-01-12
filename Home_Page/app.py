@@ -28,7 +28,7 @@ with st.sidebar:
     col1, col2 =  st.columns([0.2, 0.7])
 with col1:
     # Logo Image
-    logo = st.image("Home Page\foodstuffs.jpg", width=100)
+    #logo = st.image("Home Page\foodstuffs.jpg", width=100)
 with col2:
     # Page Title
     st.title("Omdena, Kano Nigeria Chapter - Food Prices Analysis & Prediction")
@@ -38,7 +38,7 @@ st.markdown("---")# Horizontal Line below the logo
 col1, col2= st.columns([0.5,0.5]) #Amount ofwidth each column takes
 with col1:
     # Image of market
-    image = st.image("src\image\image.jpg", use_column_width=True)
+    image = st.image("Home_Page\foodstuffs.jpg", use_column_width=True)
 with col2:
     # Project Overview
     st.markdown("""
