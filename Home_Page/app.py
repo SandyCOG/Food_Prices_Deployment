@@ -19,8 +19,8 @@ st.markdown("""
         display: block;
     }
     .stApp {
-        background-color: #00A8E8
-        color: #00171F
+        background-color: #00A8E8;
+        color: #00171F;
     }
 
     .stApp > header {
