@@ -88,7 +88,7 @@ The core aim of this project is to harness the potential of data and machine lea
 #st.markdown("---")
 
 
-state.page = selected_page
+#state.page = selected_page
 
 # Contributors Page
 elif state.page == "Contributors":
