@@ -23,9 +23,9 @@ st.markdown("""
 
 # Sidebar for page Navigation -labels the sidebar menu
 with st.sidebar:
-    st.title("Navigation")
+    st.title("Menus")
     pages = ["Introduction", "Authors", "Charts", "Prediction", "Feedback"]
-    selected_page = st.sidebar.radio("Go to:", pages)
+    selected_page = st.sidebar.radio(pages)
 
 # Update page in the session state
 state.page = selected_page
