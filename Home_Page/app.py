@@ -90,7 +90,7 @@ st.markdown("---")
 # Authors Page
 elif state.page == "Contributors":
     st.title("Contributors Profiles")
-    st.markdown("---")# Horizontal Line below the title
+    #st.markdown("---")# Horizontal Line below the title
 
     # Contributors
     Contributors_data = [
