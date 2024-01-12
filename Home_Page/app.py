@@ -21,8 +21,9 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-# Sidebar for menus
-with st.sidebar:
+# Sidebar for page Navigation
+with st.sidebar.title("Menus"): #labels the sidebar menu
+pages = ["Introduction", "Authors", "Charts", "Prediction", "Feedback"]
 
 # Logo and text beside the logo
     col1, col2 =  st.columns([0.2, 0.7])
@@ -31,7 +32,7 @@ with col1:
     #logo = st.image("Home Page\foodstuffs.jpg", width=100)
     with col2:
     # Page Title
-        st.title("Omdena, Kano Nigeria Chapter - Food Prices Analysis & Prediction")
+        st.title(" Food Prices Analysis & Prediction")
 st.markdown("---")# Horizontal Line below the logo
 
 # Overview and the image
