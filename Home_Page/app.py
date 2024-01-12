@@ -21,6 +21,16 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
+
+# Create a session state to manage page navigation
+class SessionState:
+    def __init__(self):
+        self.page = "Introduction"  # Initial page
+
+# Initialize session state
+state = SessionState()
+
+
 # Sidebar for page Navigation -labels the sidebar menu
 with st.sidebar:
     st.title("Menus")
