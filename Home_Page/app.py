@@ -26,9 +26,13 @@ st.sidebar.title("Menus")
 pages = ["Introduction", "Authors", "Charts", "Prediction", "Feedback"]
 selected_page = st.sidebar.radio("Go to:", pages, index=pages.index(state.page))
 
-# Page Title
-st.title(" Food Prices Analysis & Prediction")
-st.markdown("---")# Horizontal Line below the logo
+# Update page in the session state
+state.page = selected_page
+
+# Introduction Page
+if state.page == "Introduction":
+    st.title("Food Prediction Model")
+    st.markdown("---")# Horizontal Line below the logo
 
 # Overview and the image
 col1, col2= st.columns([0.5,0.5]) #Amount ofwidth each column takes
