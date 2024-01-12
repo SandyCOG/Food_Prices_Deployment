@@ -29,9 +29,9 @@ with st.sidebar:
 with col1:
     # Logo Image
     #logo = st.image("Home Page\foodstuffs.jpg", width=100)
-with col2:
+    with col2:
     # Page Title
-    st.title("Omdena, Kano Nigeria Chapter - Food Prices Analysis & Prediction")
+        st.title("Omdena, Kano Nigeria Chapter - Food Prices Analysis & Prediction")
 st.markdown("---")# Horizontal Line below the logo
 
 # Overview and the image
