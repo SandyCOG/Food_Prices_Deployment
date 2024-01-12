@@ -108,10 +108,10 @@ elif state.page == "Contributors":
 
     #Display authors in a 3 by 2 grid
     for i in range(0, len(Contributors_data), 2):
-       col1, col2 = st.columns(2)
+        col1, col2 = st.columns(2)
         
         # Column 1
-       with col1:
+        with col1:
             st.image(Contributors_data[i]["image"], width=150, caption=Contributors_data[i]["name"])
             st.write(Contributors_data[i]["bio"])
             st.markdown(f"[{Contributors_data[i]['name']}'s LinkedIn]({Contributors_data[i]['link']})")
