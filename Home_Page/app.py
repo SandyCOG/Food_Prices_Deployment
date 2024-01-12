@@ -76,7 +76,7 @@ The core aim of this project is to harness the potential of data and machine lea
        # p{
         #    margin-left: 50px;
        #     text-align: justify;
-        }
+      #  }
     #</style>
   # <h3>Overview of the Project</h3>
     #<p>Food prices hold significant influence over the lives of people globally, impacting factors such as affordability, food security, and economic stability. This project leverages Machine Learning (ML) techniques and Python programming to analyze historical food prices data in Nigeria, predict future prices, and offer valuable insights for consumers, policymakers, and stakeholders.</p>
