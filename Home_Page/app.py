@@ -34,7 +34,7 @@ state = SessionState()
 # Sidebar for page Navigation -labels the sidebar menu
 with st.sidebar:
     st.title("Menus")
-    pages = ["Introduction", "Authors", "Charts", "Prediction", "Feedback"]
+    pages = ["Introduction", "Contributors", "Charts", "Prediction", "Feedback"]
     selected_page = st.sidebar.radio("Go to:", pages)
 
 # Update page in the session state
