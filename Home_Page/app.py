@@ -122,7 +122,7 @@ elif state.page == "Contributors":
         
         # Column 1
         with col1:
-            st.image(Contributors_data[i]["image"], width=150, caption=Contributors_data[i]["name"])
+            st.image(Contributors_data[i]["image"], width=150, color='#000', caption=Contributors_data[i]["name"])
             st.write(Contributors_data[i]["bio"])
             st.markdown(f"[{Contributors_data[i]['name']}'s LinkedIn]({Contributors_data[i]['link']})")
 
