@@ -60,7 +60,7 @@ if state.page == "Introduction":
 col1, col2= st.columns([0.5,0.5]) #Amount ofwidth each column takes
 with col1:
     # Image of market
-    image = st.image("Home_Page\foodstuffs.jpg", use_column_width=True)
+    image = st.image("Home_Page/foodstuffs.jpg", use_column_width=True)
 with col2:
     # Project Overview
     st.markdown("""
