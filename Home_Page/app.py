@@ -47,8 +47,9 @@ if state.page == "Introduction":
 
  # Page content
     st.header("Introduction")
+    image = st.image("Home_Page/foodstuffs.jpg", use_column_width=True)
     st.write("Introduction content goes here.")
-
+  
     st.header("Problem Statement")
     st.markdown("""
 - The recent upsurge in food inflation has significantly impacted the livelihoods of Nigerians, with a particularly pronounced effect on those residing in crisis-affected regions. This added economic shock has disproportionately affected households that were already grappling with precarious living conditions.
@@ -83,7 +84,7 @@ st.markdown("""
 
 #with col2:
     # Image of market
-image = st.image("Home_Page/foodstuffs.jpg", use_column_width=True)
+
 
 # Statement of the Problem
 st.header("Problem Statement")
