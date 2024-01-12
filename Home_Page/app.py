@@ -33,7 +33,7 @@ st.markdown("""
         background-color: #003459
     }
 
-    .stApp > section {
+    section {
         background-color: #003459
     }
     
