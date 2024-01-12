@@ -23,7 +23,7 @@ st.markdown("""
 
 # Sidebar for page Navigation
 with st.sidebar.title("Menus"): #labels the sidebar menu
-pages = ["Introduction", "Authors", "Charts", "Prediction", "Feedback"]
+    pages = ["Introduction", "Authors", "Charts", "Prediction", "Feedback"]
 
 # Logo and text beside the logo
     col1, col2 =  st.columns([0.2, 0.7])
