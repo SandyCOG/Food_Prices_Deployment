@@ -33,7 +33,7 @@ st.markdown("""
         background-color: #003459
     }
 
-    section {
+    .st-emotion-cache-1cypcdb {
         background-color: #003459
     }
     
