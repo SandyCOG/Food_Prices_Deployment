@@ -22,8 +22,10 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Sidebar for page Navigation
-with st.sidebar.title("Menus"): #labels the sidebar menu
-    pages = ["Introduction", "Authors", "Charts", "Prediction", "Feedback"]
+st.sidebar.title("Menus"): #labels the sidebar menu
+pages = ["Introduction", "Authors", "Charts", "Prediction", "Feedback"]
+selected_page = st.sidebar.radio("Go to:", pages, index=pages.index(state.page))
+
 
 # Logo and text beside the logo
     col1, col2 =  st.columns([0.2, 0.7])
