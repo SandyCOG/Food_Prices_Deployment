@@ -21,6 +21,10 @@ st.markdown("""
     .stApp {
         background-color: #00A8E8
     }
+
+    .stHeader {
+        background-color: #00A8E8
+    }
 </style>
 """, unsafe_allow_html=True)
 
