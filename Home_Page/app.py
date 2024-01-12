@@ -90,7 +90,7 @@ The core aim of this project is to harness the potential of data and machine lea
 # Contributors Page
 elif state.page == "Contributors":
     st.title("Contributors Profiles")
-    #st.markdown("---")# Horizontal Line below the title
+    st.markdown("---")# Horizontal Line below the title
 
     # Contributors
     Contributors_data = [
@@ -107,7 +107,7 @@ elif state.page == "Contributors":
         
         # Column 1
         with col1:
-            st.image(Contributors_data[i]["image"], width=150, caption=Contributors_data[i]["name"])
+            #st.image(Contributors_data[i]["image"], width=150, caption=Contributors_data[i]["name"])
             st.write(Contributors_data[i]["bio"])
             st.markdown(f"[{Contributors_data[i]['name']}'s LinkedIn]({Contributors_data[i]['link']})")
 
@@ -115,7 +115,7 @@ elif state.page == "Contributors":
         with col2:
             # Check if there is a second author in the row
             if i + 1 < len(Contributors_data):
-                st.image(Contributors_data[i + 1]["image"], width=150, caption=Contributors_data[i + 1]["name"])
+                #st.image(Contributors_data[i + 1]["image"], width=150, caption=Contributors_data[i + 1]["name"])
                 st.write(Contributors_data[i + 1]["bio"])
                 st.markdown(f"[{Contributors_data[i + 1]['name']}'s LinkedIn]({Contributors_data[i + 1]['link']})")
 
