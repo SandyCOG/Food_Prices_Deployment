@@ -17,7 +17,10 @@ st.markdown("""
     }
     .css-74h3l2{
         display: block;
-    }   
+    }
+    body {
+        background-color: #00A8E8
+    }
 </style>
 """, unsafe_allow_html=True)
 
