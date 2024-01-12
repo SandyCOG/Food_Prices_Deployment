@@ -97,4 +97,3 @@ The core aim of this project is to harness the potential of data and machine lea
 
 # Footer
 st.markdown("---")
-st.write("© 2023. Developed with 💚 by Omdena Nigeria Chapter.")
