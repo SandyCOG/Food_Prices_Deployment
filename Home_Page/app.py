@@ -85,7 +85,7 @@ The core aim of this project is to harness the potential of data and machine lea
 
 
 # Footer
-st.markdown("---")
+#st.markdown("---")
 
 # Contributors Page
 elif state.page == "Contributors":
