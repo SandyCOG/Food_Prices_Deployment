@@ -18,7 +18,7 @@ st.markdown("""
     .css-74h3l2{
         display: block;
     }
-    #root {
+    .root {
         background-color: #00A8E8
     }
 </style>
