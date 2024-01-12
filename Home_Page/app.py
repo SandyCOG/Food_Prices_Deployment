@@ -26,15 +26,8 @@ st.sidebar.title("Menus")
 pages = ["Introduction", "Authors", "Charts", "Prediction", "Feedback"]
 selected_page = st.sidebar.radio("Go to:", pages, index=pages.index(state.page))
 
-
-# Logo and text beside the logo
-    col1, col2 =  st.columns([0.2, 0.7])
-with col1:
-    # Logo Image
-    #logo = st.image("Home Page\foodstuffs.jpg", width=100)
-    with col2:
-    # Page Title
-        st.title(" Food Prices Analysis & Prediction")
+# Page Title
+st.title(" Food Prices Analysis & Prediction")
 st.markdown("---")# Horizontal Line below the logo
 
 # Overview and the image
