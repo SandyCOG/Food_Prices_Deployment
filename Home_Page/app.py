@@ -22,7 +22,11 @@ st.markdown("""
         background-color: #00A8E8;
         color: #00171F;
     }
-    h1, h2, a, .st-emotion-cache-nahz7x a, .st-emotion-cache-nahz7x {
+    h1, h2, a, .st-emotion-cache-nahz7x a {
+        color: #00171F;
+    }
+
+    .st-emotion-cache-nahz7x {
         color: #00171F;
     }
     .stApp > header {
@@ -122,7 +126,7 @@ elif state.page == "Contributors":
         
         # Column 1
         with col1:
-            st.image(Contributors_data[i]["image"], width=150, color='#000', caption=Contributors_data[i]["name"])
+            st.image(Contributors_data[i]["image"], width=150, caption=Contributors_data[i]["name"])
             st.write(Contributors_data[i]["bio"])
             st.markdown(f"[{Contributors_data[i]['name']}'s LinkedIn]({Contributors_data[i]['link']})")
 
