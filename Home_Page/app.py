@@ -32,6 +32,11 @@ st.markdown("""
     .stApp > header {
         background-color: #003459
     }
+
+    .stApp > section {
+        background-color: #003459
+    }
+    
 </style>
 """, unsafe_allow_html=True)
 
