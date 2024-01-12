@@ -23,8 +23,8 @@ st.markdown("""
 
 # Sidebar for page Navigation -labels the sidebar menu
 st.sidebar.title("Menus"): 
-    pages = ["Introduction", "Authors", "Charts", "Prediction", "Feedback"]
-    selected_page = st.sidebar.radio("Go to:", pages, index=pages.index(state.page))
+pages = ["Introduction", "Authors", "Charts", "Prediction", "Feedback"]
+selected_page = st.sidebar.radio("Go to:", pages, index=pages.index(state.page))
 
 
 # Logo and text beside the logo
