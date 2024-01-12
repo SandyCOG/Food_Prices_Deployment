@@ -101,7 +101,7 @@ elif state.page == "Contributors":
        # {"name": "Juliet Sackey", "image": "Home_Page/Juliet_sackey.jpg", "Bio": "Juliet Sackey is a data analyst with scientific training, good at analysing and interpreting complex data, deriving meaningful conclusions, and communicating findings to stakeholders", "link": "https://www.linkedin.com/in/juliet-sackey-phd-23676257"},
         
         # Add more authors as needed
-    ]
+    #]
 
     # Display authors in a 3 by 2 grid
    # for i in range(0, len(Contributors_data), 2):
