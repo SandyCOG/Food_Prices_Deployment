@@ -43,7 +43,7 @@ state.page = selected_page
 # Introduction Page
 if state.page == "Introduction":
     st.title("Food Prediction Model")
-    st.markdown("---")# Horizontal Line below the logo
+    st.markdown("---")# Horizontal Line below the title
 
  # Page content
     st.header("Introduction")
@@ -86,3 +86,33 @@ The core aim of this project is to harness the potential of data and machine lea
 
 # Footer
 st.markdown("---")
+
+# Authors Page
+elif state.page == "Contributors":
+    st.title("Contributors Profiles")
+    st.markdown("---")# Horizontal Line below the title
+
+    # Contributors
+    Contributors_data = [
+        {"name": "Rabiat Ibrahim", "image": "url_to_image_1", "bio": "Bio of Author 1", "link": "https://www.linkedin.com/in/rabiat-ibrahim-488716ab?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAABdrwCgBio0uAeFM8eCNvWDkQgLWUWLGJUE&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BCy14Z2%2BSRFi1777Rye43NA%3D%3D"},
+        {"name": "Sandy Om'Iniabohs", "image": "url_to_image_2", "bio": "Bio of Author 2", "link": "https://linkedin.com/sandyominiabohs"},
+        # Add more authors as needed
+    ]
+
+    # Display authors in a 3 by 2 grid
+    for i in range(0, len(authors_data), 2):
+        col1, col2 = st.columns(2)
+        
+        # Column 1
+        with col1:
+            st.image(authors_data[i]["image"], width=150, caption=authors_data[i]["name"])
+            st.write(authors_data[i]["bio"])
+            st.markdown(f"[{authors_data[i]['name']}'s LinkedIn]({authors_data[i]['link']})")
+
+        # Column 2
+        with col2:
+            # Check if there is a second author in the row
+            if i + 1 < len(authors_data):
+                st.image(authors_data[i + 1]["image"], width=150, caption=authors_data[i + 1]["name"])
+                st.write(authors_data[i + 1]["bio"])
+                st.markdown(f"[{authors_data[i + 1]['name']}'s LinkedIn]({authors_data[i + 1]['link']})")
