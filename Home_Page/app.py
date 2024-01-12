@@ -100,19 +100,19 @@ elif state.page == "Contributors":
     ]
 
     # Display authors in a 3 by 2 grid
-    for i in range(0, len(authors_data), 2):
+    for i in range(0, len(Contributors_data), 2):
         col1, col2 = st.columns(2)
         
         # Column 1
         with col1:
-            st.image(authors_data[i]["image"], width=150, caption=authors_data[i]["name"])
-            st.write(authors_data[i]["bio"])
-            st.markdown(f"[{authors_data[i]['name']}'s LinkedIn]({authors_data[i]['link']})")
+            st.image(Contributors_data[i]["image"], width=150, caption=Contributors_data[i]["name"])
+            st.write(Contributors_data[i]["bio"])
+            st.markdown(f"[{Contributors_data[i]['name']}'s LinkedIn]({Contributors_data[i]['link']})")
 
         # Column 2
         with col2:
             # Check if there is a second author in the row
-            if i + 1 < len(authors_data):
-                st.image(authors_data[i + 1]["image"], width=150, caption=authors_data[i + 1]["name"])
-                st.write(authors_data[i + 1]["bio"])
-                st.markdown(f"[{authors_data[i + 1]['name']}'s LinkedIn]({authors_data[i + 1]['link']})")
+            if i + 1 < len(Contributors_data):
+                st.image(Contributors_data[i + 1]["image"], width=150, caption=Contributors_data[i + 1]["name"])
+                st.write(Contributors_data[i + 1]["bio"])
+                st.markdown(f"[{Contributors_data[i + 1]['name']}'s LinkedIn]({Contributors_data[i + 1]['link']})")
