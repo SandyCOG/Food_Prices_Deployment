@@ -57,11 +57,9 @@ if state.page == "Introduction":
 
 
 # Overview and the image
-col1, col2= st.columns([0.5,0.5]) #Amount ofwidth each column takes
+col1, col2 = st.columns([0.5, 0.5])  # Amount of width each column takes
+
 with col1:
-    # Image of market
-    image = st.image("Home_Page/foodstuffs.jpg", use_column_width=True)
-with col2:
     # Project Overview
     st.markdown("""
     <style>
@@ -77,8 +75,12 @@ with col2:
     <p>Food prices hold significant influence over the lives of people globally, impacting factors such as affordability, food security, and economic stability. This project leverages Machine Learning (ML) techniques and Python programming to analyze historical food prices data in Nigeria, predict future prices, and offer valuable insights for consumers, policymakers, and stakeholders.</p>
     """, unsafe_allow_html=True)
 
+with col2:
+    # Image of market
+    image = st.image("Home_Page/foodstuffs.jpg", use_column_width=True)
+
 # Statement of the Problem
-st.header("🔰Statement of the Problem")
+st.header("Problem Statement")
 st.markdown("""
 - The recent upsurge in food inflation has significantly impacted the livelihoods of Nigerians, with a particularly pronounced effect on those residing in crisis-affected regions. This added economic shock has disproportionately affected households that were already grappling with precarious living conditions.
 - Government agencies, humanitarian groups, and development organizations consistently track inflation rates to detect concerning patterns and inform their strategies for assistance. Elevated inflation can result in a substantial uptick in essential household expenditures, necessitating a policy intervention. In severe instances, a spike in food costs can serve as an early warning sign of local food scarcity, indicating the onset or exacerbation of a food and nutrition crisis.
@@ -86,7 +88,7 @@ st.markdown("""
 """)
 
 # Project Objectives
-st.header("🎯Project Objectives")
+st.header("Project Goals & Objectives")
 st.markdown("""
 The core aim of this project is to harness the potential of data and machine learning to forecast food prices in Nigeria. This predictive analysis serves as a valuable resource for consumers, policymakers, and stakeholders, empowering them to make informed, data-driven decisions. The specific objectives are:
 - To Analyse historical food price data to identify trends, seasonality, and correlations.
