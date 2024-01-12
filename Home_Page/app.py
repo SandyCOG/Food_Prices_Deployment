@@ -25,7 +25,7 @@ st.markdown("""
 with st.sidebar:
     st.title("Menus")
     pages = ["Introduction", "Authors", "Charts", "Prediction", "Feedback"]
-    selected_page = st.sidebar.radio(pages)
+    selected_page = st.sidebar.radio("Go to:", pages)
 
 # Update page in the session state
 state.page = selected_page
