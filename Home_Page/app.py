@@ -145,8 +145,8 @@ elif state.page == "Contributors":
 
 
 # Charts Page
-df = pd.read_csv('Home_Page\preprocessed_data.csv')
 elif state.page == "Charts":
+    df = pd.read_csv('Home_Page\preprocessed_data.csv')
     st.title("Food Prediction Model")
 
     # Page content 
