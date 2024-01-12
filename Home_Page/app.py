@@ -22,7 +22,7 @@ st.markdown("""
         background-color: #00A8E8;
         color: #00171F;
     }
-    h2 {
+    h1 h2 {
         color: #00171F;
     }
     .stApp > header {
