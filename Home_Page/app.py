@@ -144,6 +144,32 @@ elif state.page == "Contributors":
                 st.markdown(f"[{Contributors_data[i + 1]['name']}'s LinkedIn]({Contributors_data[i + 1]['link']})")
 
 
+# Charts Page
+elif state.page == "Charts":
+    st.title("Food Prediction Model")
+
+    # Page content 
+    col1, col2, col3 =  st.columns(3)
+    with col1:
+        selected_year = st.selectbox('Select Year:', df['year'].unique())
+    with col2:
+        selected_category = st.selectbox('Select State:', df['State'].unique())
+    with col3:
+        selected_category = st.selectbox('Select Category Type:', df['category'].unique())
+    # Filter the data based on user selection
+    filtered_df = df[(df['year'] == selected_year) & (df['category'] == selected_category)]
+
+    # Dataset
+    st.subheader("Filtered Data")
+    col1, col2, col3 =  st.columns(3)
+    with col1:
+        st.write(f"Selected Year: {selected_year}")
+    with col2:
+        st.write(f"Selected State: {selected_state}")
+    with col3:
+        st.write(f"Selected Category: {selected_category}")  
+    st.write(filtered_df)
+
 
 
 # Feedback Page
