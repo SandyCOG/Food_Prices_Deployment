@@ -126,9 +126,7 @@ elif state.page == "Contributors":
         
         # Column 1
         with col1:
-            st.image(Contributors_data[i]["image"], width=150)
-            new_title = '<p style="font-family:sans-serif; color:Green; font-size: 42px;">New image</p>'
-            st.markdown(new_title, unsafe_allow_html=True)
+            st.image(Contributors_data[i]["image"], width=150, caption=Contributors_data[i]["name"])
             st.write(Contributors_data[i]["bio"])
             st.markdown(f"[{Contributors_data[i]['name']}'s LinkedIn]({Contributors_data[i]['link']})")
 
