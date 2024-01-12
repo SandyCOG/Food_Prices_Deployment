@@ -101,7 +101,7 @@ elif state.page == "Contributors":
     Contributors_data = [
        {"name": "Rabiat Ibrahim", "image": "Home_Page/Rabiat_ibrahim.jpg", "bio": "Bio of Author 1", "link": "https://www.linkedin.com/in/https://www.linkedin.com/in/rabiat-ibrahim-488716ab"},
        #{"name": "Sandy Om'Iniabohs", "image": "url_to_image_2", "bio": "Bio of Author 2", "link": "https://linkedin.com/sandyominiabohs"},
-       {"name": "Juliet Sackey", "image": "Home_Page/Juliet_sackey.jpg", "Bio": "Juliet Sackey is a data analyst with scientific training, good at analysing and interpreting complex data, deriving meaningful conclusions, and communicating findings to stakeholders", "link": "https://www.linkedin.com/in/juliet-sackey-phd-23676257"},
+       {"name": "Juliet Sackey", "image": "Home_Page/Juliet_sackey.jpg", "bio": "Juliet Sackey is a data analyst with scientific training, good at analysing and interpreting complex data, deriving meaningful conclusions, and communicating findings to stakeholders", "link": "https://www.linkedin.com/in/juliet-sackey-phd-23676257"},
         
         # Add more authors as needed
     ]
