@@ -85,7 +85,7 @@ The core aim of this project is to harness the potential of data and machine lea
 
 
 # Footer
-#st.markdown("---")
+st.markdown("---")
 
 # Contributors Page
 elif state.page == "Contributors":
@@ -94,8 +94,10 @@ elif state.page == "Contributors":
 
     # Contributors
     Contributors_data = [
-        {"name": "Rabiat Ibrahim", "image": "url_to_image_1", "bio": "Bio of Author 1", "link": "https://www.linkedin.com/in/rabiat-ibrahim-488716ab?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAABdrwCgBio0uAeFM8eCNvWDkQgLWUWLGJUE&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BCy14Z2%2BSRFi1777Rye43NA%3D%3D"},
+        {"name": "Rabiat Ibrahim", "image": "url_to_image_1", "bio": "Bio of Author 1", "link": "https://www.linkedin.com/in/https://www.linkedin.com/in/rabiat-ibrahim-488716ab"},
         {"name": "Sandy Om'Iniabohs", "image": "url_to_image_2", "bio": "Bio of Author 2", "link": "https://linkedin.com/sandyominiabohs"},
+        {"name": "Juliet Sackey", "image": "url_to_image_2", "Bio": "Juliet Sackey is a data analyst with scientific training, good at analysing and interpreting complex data, deriving meaningful conclusions, and communicating findings to stakeholders", "link": "https://www.linkedin.com/in/juliet-sackey-phd-23676257"},
+        
         # Add more authors as needed
     ]
 
