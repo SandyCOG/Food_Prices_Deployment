@@ -67,27 +67,27 @@ The core aim of this project is to harness the potential of data and machine lea
 """)
 
 
-    # Project Overview
-#st.markdown("""
-    #<style>
-        #h3{
-            #margin-left: 50px;
-        #}
-        #p{
-         #   margin-left: 50px;
-         #   text-align: justify;
-       # }
-    #</style>
-   # <h3>Overview of the Project</h3>
-   # <p>Food prices hold significant influence over the lives of people globally, impacting factors such as affordability, food security, and economic stability. This project leverages Machine Learning (ML) techniques and Python programming to analyze historical food prices data in Nigeria, predict future prices, and offer valuable insights for consumers, policymakers, and stakeholders.</p>
-   # """, unsafe_allow_html=True)
+    #Project Overview
+st.markdown("""
+    <style>
+        h3{
+            margin-left: 50px;
+        }
+        p{
+            margin-left: 50px;
+            text-align: justify;
+        }
+    </style>
+   <h3>Overview of the Project</h3>
+    <p>Food prices hold significant influence over the lives of people globally, impacting factors such as affordability, food security, and economic stability. This project leverages Machine Learning (ML) techniques and Python programming to analyze historical food prices data in Nigeria, predict future prices, and offer valuable insights for consumers, policymakers, and stakeholders.</p>
+     """, unsafe_allow_html=True)
 
 
 
 # Footer
 st.markdown("---")
 
-# Authors Page
+# Contributors Page
 elif state.page == "Contributors":
     st.title("Contributors Profiles")
     #st.markdown("---")# Horizontal Line below the title
