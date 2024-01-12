@@ -57,11 +57,11 @@ if state.page == "Introduction":
 
 
 # Overview and the image
-col1, col2 = st.columns([0.5, 0.5])  # Amount of width each column takes
+#col1, col2 = st.columns([0.5, 0.5])  # Amount of width each column takes
 
-with col1:
+#with col1:
     # Project Overview
-    st.markdown("""
+st.markdown("""
     <style>
         h3{
             margin-left: 50px;
@@ -75,9 +75,9 @@ with col1:
     <p>Food prices hold significant influence over the lives of people globally, impacting factors such as affordability, food security, and economic stability. This project leverages Machine Learning (ML) techniques and Python programming to analyze historical food prices data in Nigeria, predict future prices, and offer valuable insights for consumers, policymakers, and stakeholders.</p>
     """, unsafe_allow_html=True)
 
-with col2:
+#with col2:
     # Image of market
-    image = st.image("Home_Page/foodstuffs.jpg", use_column_width=True)
+image = st.image("Home_Page/foodstuffs.jpg", use_column_width=True)
 
 # Statement of the Problem
 st.header("Problem Statement")
