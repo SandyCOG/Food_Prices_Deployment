@@ -35,6 +35,17 @@ if state.page == "Introduction":
     st.title("Food Prediction Model")
     st.markdown("---")# Horizontal Line below the logo
 
+ # Page content
+    st.header("Introduction")
+    st.write("Introduction content goes here.")
+
+    st.header("Problem Statement")
+    st.write("Problem statement goes here.")
+
+    st.header("Objectives")
+    st.write("Objectives go here.")
+
+
 # Overview and the image
 col1, col2= st.columns([0.5,0.5]) #Amount ofwidth each column takes
 with col1:
