@@ -38,6 +38,9 @@ st.markdown("""
     st-emotion-cache-1r4qj8v {
         background-color: #003459
     }
+    [data-testid=stSidebar] {
+        background-color: #ff000050;
+    }
 </style>
 """, unsafe_allow_html=True)
 
