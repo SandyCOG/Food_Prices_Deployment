@@ -1,4 +1,5 @@
 import streamlit as st
+import pandas as pd
 
 # Set Page Configuration for a Wider Layout
 st.set_page_config(layout="wide")
