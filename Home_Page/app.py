@@ -26,7 +26,6 @@ st.markdown("""
     h1, h2, h3, a, .st-emotion-cache-nahz7x a {
         color: #00A8E8;  #titles/headers
     }
-
     .st-emotion-cache-nahz7x {
         color: #00A8E8; 
     }
@@ -36,7 +35,9 @@ st.markdown("""
     .st-emotion-cache-1cypcdb {
         background-color: #003459
     }
-    
+    st-emotion-cache-1r4qj8v {
+        background-color: #003459
+    }
 </style>
 """, unsafe_allow_html=True)
 
