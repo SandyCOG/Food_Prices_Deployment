@@ -18,12 +18,13 @@ st.markdown("""
     .css-74h3l2{
         display: block;
     }
+    
     .stApp {
         background-color: #003459;
         color: #00A8E8;
     }
-    h1, h2, a, .st-emotion-cache-nahz7x a {
-        color: #FFFFFF; 
+    h1, h2, h3, a, .st-emotion-cache-nahz7x a {
+        color: #00A8E8;  #titles/headers
     }
 
     .st-emotion-cache-nahz7x {
@@ -32,7 +33,6 @@ st.markdown("""
     .stApp > header {
         background-color: #003459
     }
-
     .st-emotion-cache-1cypcdb {
         background-color: #003459
     }
@@ -73,12 +73,13 @@ if state.page == "Introduction":
         """)
     
     st.subheader('PROJECT BREAKDOWN', divider='rainbow')
-    st.markdown("""The project is broken down into 5 stages which include:
-    - Data Collection and Preprocessin
-    - Exploratory Data Analysis (EDA)
-    - Feature Engineering
-    - Model Development & Evaluation
-    - Interactive Web Application
+    st.markdown("""
+The project is broken down into 5 stages which include:
+- Data Collection and Preprocessin
+- Exploratory Data Analysis (EDA)
+- Feature Engineering
+- Model Development & Evaluation
+- Interactive Web Application
       """)
   
     st.header("Problem Statement")
