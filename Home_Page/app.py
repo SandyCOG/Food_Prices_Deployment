@@ -36,6 +36,7 @@ st.markdown("""
     }
     .st-emotion-cache-6qob1r {
         background-color: #003459
+        color: #00A8E8
     }
     
     .stApp > header {
