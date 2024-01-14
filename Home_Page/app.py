@@ -1,5 +1,10 @@
 import streamlit as st
+import numpy as np
 import pandas as pd
+
+st.write('Streamlit ' + st.__version__)
+st.write('Pandas ' + pd.__version__)
+st.write('Numpy ' + np.__version__)
 
 # Set Page Configuration for a Wider Layout
 st.set_page_config(layout="wide")
