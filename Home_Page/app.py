@@ -162,7 +162,7 @@ elif state.page == "Charts":
     with col1:
         selected_year = st.selectbox('Select Year:', df['Year'].unique())
     with col2:
-        selected_category = st.selectbox('Select State:', df['State'].unique())
+        selected_category = st.selectbox('Select State:', df['state'].unique())
     with col3:
         selected_category = st.selectbox('Select Category Type:', df['crops'].unique())
     # Filter the data based on user selection
