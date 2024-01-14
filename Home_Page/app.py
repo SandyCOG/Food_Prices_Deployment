@@ -1,6 +1,8 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
 
 # Set Page Configuration for a Wider Layout
 st.set_page_config(layout="wide")
@@ -181,17 +183,16 @@ elif state.page == "Charts":
         st.write(f"Selected Category: {selected_category}")  
     st.write(filtered_df)
 
-    st.subheader("Cost of Maize per Kg accross the states (2017 to 2020)", divider='rainbow')
     selected_crop = st.selectbox('Select Crop Type:', df['crops'].unique())
-      
-    #plt.figure(figsize=(10, 5))
+    st.subheader(f"Cost of {selected_crop} per Kg accross the states (2017 to 2020)", divider='rainbow')
 
+    # Using Seaborn to create a bar plot
+    plt.figure(figsize=(10, 5))
     gx = sns.barplot(data=df[df["crops"]==selected_crop], x='states', y='Price/Kg (Naira)')
     gx.set_xticklabels(gx.get_xticklabels(), rotation=90)
-    plt.title('Cost of Broken Rice (Ofada) per Kg accross the states (2017 to 2020)')
-    plt.xlabel('States')
-    plt.ylabel('Price in Naira/kg')
-    plt.show()
+    
+    # Display the plot using st.pyplot()
+    st.pyplot(plt)
 
 # Feedback Page
 elif state.page == "Feedback":
