@@ -69,15 +69,16 @@ if state.page == "Introduction":
     image = st.image("Home_Page/foodstuffs.jpg", use_column_width=True)
     st.markdown("""[Action Against Hunger](https://www.actionagainsthunger.org.uk/our-impact/stories/the-hungriest-countries-in-the-world), ranks Nigeria as one of the world's hungriest countries. Additionally, [UNICEF](https://www.unicef.org/press-releases/25-million-nigerians-high-risk-food-insecurity-2023),\n",
         25 million Nigerians are at high risk of food insecurity in 2023. High food insecurity is caused by factors such as high rate of food inflation, climate changes, high rates of poverty and unemployment.
-        Rising food prices affects the livelihood of Nigerian citizens, directly impacting economic stability and well-being. This project aims to utilize Data science and Machine Learning (ML) techniques to analyze historical food price data in Nigeria, predict future price trends, and provide valuable insights for the benefit of consumers, policymakers, and relevant stakeholders.\n",
-        
+        Rising food prices affects the livelihood of Nigerian citizens, directly impacting economic stability and well-being. This project aims to utilize Data science and Machine Learning (ML) techniques to analyze historical food price data in Nigeria, predict future price trends, and provide valuable insights for the benefit of consumers, policymakers, and relevant stakeholders.
+        """)
+    
         st.subheader('PROJECT BREAKDOWN', divider='rainbow')
-        st.markdown("The project is broken down into 5 stages which include:
-        - Data Collection and Preprocessing\n",
-        - Exploratory Data Analysis (EDA)\n",
-        - Feature Engineering,
-        - Model Development & Evaluation,
-        - Interactive Web Application"
+        st.markdown("""The project is broken down into 5 stages which include:
+        - Data Collection and Preprocessin
+        - Exploratory Data Analysis (EDA)
+        - Feature Engineering
+        - Model Development & Evaluation
+        - Interactive Web Application
       """)
   
     st.header("Problem Statement")
