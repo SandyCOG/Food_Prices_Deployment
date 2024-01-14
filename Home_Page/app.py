@@ -169,10 +169,10 @@ elif state.page == "Charts":
     with col3:
         selected_category = st.selectbox('Select Crop Type:', df['crops'].unique(), placeholder="Select a Crop...")
     # Filter the data based on user selection
-    filtered_df = df[(df['Year'] == selected_year) & (df['crops'] == selected_category)]
+    filtered_df = df[(df['Year'] == selected_year) & (df['crops'] == selected_category) & df['states'] == selected_state)]
 
     # Dataset
-    st.subheader("Filtered Data")
+    st.subheader("Filtered Data", divider='rainbow')
     col1, col2, col3 =  st.columns(3)
     with col1:
         st.write(f"Selected Year: {selected_year}")
@@ -182,7 +182,19 @@ elif state.page == "Charts":
         st.write(f"Selected Category: {selected_category}")  
     st.write(filtered_df)
 
+    st.subheader("Cost of Maize per Kg accross the states (2017 to 2020)", divider='rainbow')
+    col1 = st.columns(1)
+    with col1:
+        selected_crop = st.selectbox('Select Crop Type:', df['crops'].unique())
+      
+    plt.figure(figsize=(10, 5))
 
+    gx = sns.barplot(data=df[df["crops"]==selected_crop], x='states', y='Price/Kg (Naira)')
+    gx.set_xticklabels(gx.get_xticklabels(), rotation=90)
+    plt.title('Cost of Broken Rice (Ofada) per Kg accross the states (2017 to 2020)')
+    plt.xlabel('States')
+    plt.ylabel('Price in Naira/kg')
+    plt.show()
 
 # Feedback Page
 elif state.page == "Feedback":
