@@ -1,4 +1,4 @@
-pip : -r requirements.txt
+pip install -r Home_Page/requirements.txt
 import streamlit as st
 import numpy as np
 import pandas as pd
