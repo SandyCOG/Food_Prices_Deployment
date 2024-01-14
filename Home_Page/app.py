@@ -27,11 +27,15 @@ st.markdown("""
         color: #00A8E8; 
     }
     h1, h2, h3, a, .st-emotion-cache-nahz7x a {
-        color: #00A8E8;  #titles/headers
+        color: #00A8E8;  
     }
     .st-emotion-cache-nahz7x {
         color: #00A8E8; 
     }
+    .st-emotion-cache-6qob1r {
+        background-color: #003459
+    }
+    
     .stApp > header {
         background-color: #003459
     }
