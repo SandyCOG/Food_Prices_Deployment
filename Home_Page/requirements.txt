@@ -1,5 +1,6 @@
 keybert==0.6.0
 keyphrase_vectorizers==0.0.10
+python==3.9.6
 matplotlib==3.5.2
 numpy==1.26.3
 pandas==2.1.4
