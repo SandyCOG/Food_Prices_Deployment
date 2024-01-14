@@ -23,7 +23,7 @@ st.markdown("""
         color: #FFFFFF;
     }
     h1, h2, a, .st-emotion-cache-nahz7x a {
-        color: #FFFFFF; 
+        color: #00A8E8; 
     }
 
     .st-emotion-cache-nahz7x {
