@@ -72,13 +72,13 @@ if state.page == "Introduction":
         Rising food prices affects the livelihood of Nigerian citizens, directly impacting economic stability and well-being. This project aims to utilize Data science and Machine Learning (ML) techniques to analyze historical food price data in Nigeria, predict future price trends, and provide valuable insights for the benefit of consumers, policymakers, and relevant stakeholders.
         """)
     
-        st.subheader('PROJECT BREAKDOWN', divider='rainbow')
-        st.markdown("""The project is broken down into 5 stages which include:
-        - Data Collection and Preprocessin
-        - Exploratory Data Analysis (EDA)
-        - Feature Engineering
-        - Model Development & Evaluation
-        - Interactive Web Application
+    st.subheader('PROJECT BREAKDOWN', divider='rainbow')
+    st.markdown("""The project is broken down into 5 stages which include:
+    - Data Collection and Preprocessin
+    - Exploratory Data Analysis (EDA)
+    - Feature Engineering
+    - Model Development & Evaluation
+    - Interactive Web Application
       """)
   
     st.header("Problem Statement")
