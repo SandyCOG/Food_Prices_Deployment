@@ -169,7 +169,7 @@ elif state.page == "Charts":
     with col3:
         selected_category = st.selectbox('Select Crop Type:', df['crops'].unique(), placeholder="Select a Crop...")
     # Filter the data based on user selection
-    filtered_df = df[(df['Year'] == selected_year) & (df['crops'] == selected_category) & df['states'] == selected_state)]
+    filtered_df = df[(df['Year'] == selected_year) & (df['crops'] == selected_category) & (df['states'] == selected_state)]
 
     # Dataset
     st.subheader("Filtered Data", divider='rainbow')
