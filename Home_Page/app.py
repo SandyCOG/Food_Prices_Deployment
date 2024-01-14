@@ -185,7 +185,7 @@ elif state.page == "Charts":
 
     #selected_crop = st.selectbox('Select Crop Type:', df['crops'].unique())
     st.subheader("Cost of Crop per Kg accross the states (2017 to 2020)", divider='rainbow')
-    selected_crop = st.selectbox(color:grey['Select Crop Type:'], df['crops'].unique())
+    selected_crop = st.selectbox('Select Crop Type:', df['crops'].unique())
 
     # Using Seaborn to create a bar plot
     #plt.figure(figsize=(10, 5))
