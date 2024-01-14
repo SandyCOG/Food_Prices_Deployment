@@ -22,6 +22,11 @@ st.markdown("""
     .stApp {
         background-color: #003459;
         color: #00A8E8;
+
+    [data-testid=stSidebar] {
+        background-color: #003459;
+    }
+    
     }
     h1, h2, h3, a, .st-emotion-cache-nahz7x a {
         color: #00A8E8;  #titles/headers
@@ -38,9 +43,7 @@ st.markdown("""
     st-emotion-cache-1r4qj8v {
         background-color: #003459
     }
-    [data-testid=stSidebar] {
-        background-color: #003459;
-    }
+    
 </style>
 """, unsafe_allow_html=True)
 
@@ -112,7 +115,7 @@ The core aim of this project is to harness the potential of data and machine lea
 
 # Contributors Page
 elif state.page == "Contributors":
-    st.title("Contributors Profiles", divider='rainbow')
+    st.title("Contributors Profiles")
     st.markdown("---")# Horizontal Line below the title
 
     #images = ['Rabiat_ibrahim.jpg', 'Rabiat_ibrahim.jpg']
