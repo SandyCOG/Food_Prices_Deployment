@@ -81,7 +81,7 @@ if state.page == "Introduction":
 
  # Page content
     st.header("Introduction", divider='rainbow')
-    image = st.image("Home_Page/foodstuffs.jpg", use_column_width=True)
+    image = st.image("Home_Page/foodstuffs.jpg", use_column_width=False)
     st.markdown("""[Action Against Hunger](https://www.actionagainsthunger.org.uk/our-impact/stories/the-hungriest-countries-in-the-world), ranks Nigeria as one of the world's hungriest countries. Additionally, [UNICEF](https://www.unicef.org/press-releases/25-million-nigerians-high-risk-food-insecurity-2023),\n",
         25 million Nigerians are at high risk of food insecurity in 2023. High food insecurity is caused by factors such as high rate of food inflation, climate changes, high rates of poverty and unemployment.
         Rising food prices affects the livelihood of Nigerian citizens, directly impacting economic stability and well-being. This project aims to utilize Data science and Machine Learning (ML) techniques to analyze historical food price data in Nigeria, predict future price trends, and provide valuable insights for the benefit of consumers, policymakers, and relevant stakeholders.
@@ -151,7 +151,7 @@ elif state.page == "Contributors":
         with col2:
         # Check if there is a second author in the row
             if i + 1 < len(Contributors_data):
-                st.image(Contributors_data[i + 1]["image"], width=150, caption=Contributors_data[i + 1]["name"])
+                st.image(Contributors_data[i + 1]["image"], width=200, caption=Contributors_data[i + 1]["name"])
                 st.write(Contributors_data[i + 1]["bio"])
                 st.markdown(f"[{Contributors_data[i + 1]['name']}'s LinkedIn]({Contributors_data[i + 1]['link']})")
 
@@ -192,7 +192,7 @@ elif state.page == "Charts":
     #gx.set_xticklabels(gx.get_xticklabels(), rotation=90)
 
     #USING st.bar_chart
-    st.bar_chart(data=df[df["crops"]==selected_crop], x='states', y='Price/Kg (Naira)', color=None, use_container_width=True)
+    st.bar_chart(data=df[df["crops"]==selected_crop], x='states', y='Price/Kg (Naira)', color="#2AAA8A", width= 150, height=200, use_container_width=True)
     
     # Display the plot using st.pyplot()
     #st.pyplot(plt)
