@@ -22,11 +22,10 @@ st.markdown("""
     .stApp {
         background-color: #003459;
         color: #00A8E8;
-
-    [data-testid=stSidebar] {
+}
+    .st-emotion-cache-1r4qj8v {
         background-color: #003459;
-    }
-    
+        color: #00A8E8; 
     }
     h1, h2, h3, a, .st-emotion-cache-nahz7x a {
         color: #00A8E8;  #titles/headers
