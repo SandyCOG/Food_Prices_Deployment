@@ -1,7 +1,7 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-#import seaborn as sns
+py -m pip install -r requirements.txt
 
 # Set Page Configuration for a Wider Layout
 st.set_page_config(layout="wide")
