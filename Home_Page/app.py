@@ -39,7 +39,7 @@ st.markdown("""
         background-color: #003459
     }
     [data-testid=stSidebar] {
-        background-color: #ff000050;
+        background-color: #003459;
     }
 </style>
 """, unsafe_allow_html=True)
@@ -69,7 +69,7 @@ if state.page == "Introduction":
     st.markdown("---")# Horizontal Line below the title
 
  # Page content
-    st.header("Introduction")
+    st.header("Introduction", divider='rainbow')
     image = st.image("Home_Page/foodstuffs.jpg", use_column_width=True)
     st.markdown("""[Action Against Hunger](https://www.actionagainsthunger.org.uk/our-impact/stories/the-hungriest-countries-in-the-world), ranks Nigeria as one of the world's hungriest countries. Additionally, [UNICEF](https://www.unicef.org/press-releases/25-million-nigerians-high-risk-food-insecurity-2023),\n",
         25 million Nigerians are at high risk of food insecurity in 2023. High food insecurity is caused by factors such as high rate of food inflation, climate changes, high rates of poverty and unemployment.
@@ -86,14 +86,14 @@ The project is broken down into 5 stages which include:
 - Interactive Web Application
       """)
   
-    st.header("Problem Statement")
+    st.header("Problem Statement", divider='rainbow')
     st.markdown("""
 - The recent upsurge in food inflation has significantly impacted the livelihoods of Nigerians, with a particularly pronounced effect on those residing in crisis-affected regions. This added economic shock has disproportionately affected households that were already grappling with precarious living conditions.
 - Government agencies, humanitarian groups, and development organizations consistently track inflation rates to detect concerning patterns and inform their strategies for assistance. Elevated inflation can result in a substantial uptick in essential household expenditures, necessitating a policy intervention. In severe instances, a spike in food costs can serve as an early warning sign of local food scarcity, indicating the onset or exacerbation of a food and nutrition crisis.
 - However, during various crisis situations, especially in conflict-affected regions where food markets become inaccessible, the collection of detailed price data is often hindered. These disruptions tend to align with periods and locations characterized by significant price instability. The absence of such data creates challenges in accurately assessing price fluctuations, which is essential for gauging the gravity of conditions in these areas and formulating effective responses.
 """)
 
-    st.header("Objectives")
+    st.header("Objectives", divider='rainbow')
     st.markdown("""
 The core aim of this project is to harness the potential of data and machine learning to forecast food prices in Nigeria. This predictive analysis serves as a valuable resource for consumers, policymakers, and stakeholders, empowering them to make informed, data-driven decisions. The specific objectives are:
 - To Analyse historical food price data to identify trends, seasonality, and correlations.
@@ -101,22 +101,6 @@ The core aim of this project is to harness the potential of data and machine lea
 - To Create an interactive web application to visualize the data for better insights.
 - To create reports and give recommendations based on the findings.
 """)
-
-
-    #Project Overview
-#st.markdown("""
-    #<style>
-       # h3{
-       #     margin-left: 50px;
-       # }
-       # p{
-        #    margin-left: 50px;
-       #     text-align: justify;
-      #  }
-    #</style>
-  # <h3>Overview of the Project</h3>
-    #<p>Food prices hold significant influence over the lives of people globally, impacting factors such as affordability, food security, and economic stability. This project leverages Machine Learning (ML) techniques and Python programming to analyze historical food prices data in Nigeria, predict future prices, and offer valuable insights for consumers, policymakers, and stakeholders.</p>
-     #""", unsafe_allow_html=True)
 
 
 
@@ -128,7 +112,7 @@ The core aim of this project is to harness the potential of data and machine lea
 
 # Contributors Page
 elif state.page == "Contributors":
-    st.title("Contributors Profiles")
+    st.title("Contributors Profiles", divider='rainbow')
     st.markdown("---")# Horizontal Line below the title
 
     #images = ['Rabiat_ibrahim.jpg', 'Rabiat_ibrahim.jpg']
@@ -195,7 +179,7 @@ elif state.page == "Feedback":
     st.title("Food Prediction Model")
 
     # Page content
-    st.header("Feedback Form")
+    st.header("Feedback Form", divider='rainbow')
 
     # Feedback form
     name = st.text_input("Name:")
