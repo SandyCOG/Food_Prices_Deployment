@@ -81,7 +81,7 @@ if state.page == "Introduction":
 
  # Page content
     st.header("Introduction", divider='rainbow')
-    image = st.image("Home_Page/foodstuffs.jpg", use_column_width=False)
+    image = st.image("Home_Page/foodstuffs.jpg", use_column_width=True)
     st.markdown("""[Action Against Hunger](https://www.actionagainsthunger.org.uk/our-impact/stories/the-hungriest-countries-in-the-world), ranks Nigeria as one of the world's hungriest countries. Additionally, [UNICEF](https://www.unicef.org/press-releases/25-million-nigerians-high-risk-food-insecurity-2023),\n",
         25 million Nigerians are at high risk of food insecurity in 2023. High food insecurity is caused by factors such as high rate of food inflation, climate changes, high rates of poverty and unemployment.
         Rising food prices affects the livelihood of Nigerian citizens, directly impacting economic stability and well-being. This project aims to utilize Data science and Machine Learning (ML) techniques to analyze historical food price data in Nigeria, predict future price trends, and provide valuable insights for the benefit of consumers, policymakers, and relevant stakeholders.
@@ -143,7 +143,7 @@ elif state.page == "Contributors":
         
         # Column 1
         with col1:
-            st.image(Contributors_data[i]["image"], width=150, caption=Contributors_data[i]["name"])
+            st.image(Contributors_data[i]["image"], width=200, caption=Contributors_data[i]["name"])
             st.write(Contributors_data[i]["bio"])
             st.markdown(f"[{Contributors_data[i]['name']}'s LinkedIn]({Contributors_data[i]['link']})")
 
@@ -183,8 +183,9 @@ elif state.page == "Charts":
         st.write(f"Selected Category: {selected_category}")  
     st.write(filtered_df)
 
-    selected_crop = st.selectbox('Select Crop Type:', df['crops'].unique())
+    #selected_crop = st.selectbox('Select Crop Type:', df['crops'].unique())
     st.subheader(f"Cost of {selected_crop} per Kg accross the states (2017 to 2020)", divider='rainbow')
+    selected_crop = st.selectbox('Select Crop Type:', df['crops'].unique())
 
     # Using Seaborn to create a bar plot
     #plt.figure(figsize=(10, 5))
@@ -192,7 +193,7 @@ elif state.page == "Charts":
     #gx.set_xticklabels(gx.get_xticklabels(), rotation=90)
 
     #USING st.bar_chart
-    st.bar_chart(data=df[df["crops"]==selected_crop], x='states', y='Price/Kg (Naira)', color="#2AAA8A", width= 150, height=200, use_container_width=True)
+    st.bar_chart(data=df[df["crops"]==selected_crop], x='states', y='Price/Kg (Naira)', color="#177245", width= 150, height=500, use_container_width=True)
     
     # Display the plot using st.pyplot()
     #st.pyplot(plt)
