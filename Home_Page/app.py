@@ -183,7 +183,7 @@ elif state.page == "Charts":
     st.write(filtered_df)
 
     st.subheader("Cost of Maize per Kg accross the states (2017 to 2020)", divider='rainbow')
-        selected_crop = st.selectbox('Select Crop Type:', df['crops'].unique())
+    selected_crop = st.selectbox('Select Crop Type:', df['crops'].unique())
       
     plt.figure(figsize=(10, 5))
 
