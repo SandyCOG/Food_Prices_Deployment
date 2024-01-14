@@ -20,7 +20,7 @@ st.markdown("""
     }
     .stApp {
         background-color: #003459;
-        color: #FFFFFF;
+        color: #00A8E8;
     }
     h1, h2, a, .st-emotion-cache-nahz7x a {
         color: #FFFFFF; 
