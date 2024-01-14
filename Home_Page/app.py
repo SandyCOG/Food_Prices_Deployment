@@ -24,7 +24,6 @@ st.markdown("""
         color: #00A8E8;
 }
     .st-emotion-cache-1r4qj8v {
-        background-color: #003459;
         color: #00A8E8; 
     }
     h1, h2, h3, a, .st-emotion-cache-nahz7x a {
