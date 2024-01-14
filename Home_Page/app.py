@@ -23,11 +23,11 @@ st.markdown("""
         color: #FFFFFF;
     }
     h1, h2, a, .st-emotion-cache-nahz7x a {
-        color: #00A8E8; 
+        color: #FFFFFF; 
     }
 
     .st-emotion-cache-nahz7x {
-        color: #FFFFFF; 
+        color: #00A8E8; 
     }
     .stApp > header {
         background-color: #003459
