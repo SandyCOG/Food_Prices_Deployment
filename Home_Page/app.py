@@ -71,13 +71,13 @@ if state.page == "Introduction":
         25 million Nigerians are at high risk of food insecurity in 2023. High food insecurity is caused by factors such as high rate of food inflation, climate changes, high rates of poverty and unemployment.
         Rising food prices affects the livelihood of Nigerian citizens, directly impacting economic stability and well-being. This project aims to utilize Data science and Machine Learning (ML) techniques to analyze historical food price data in Nigeria, predict future price trends, and provide valuable insights for the benefit of consumers, policymakers, and relevant stakeholders.\n",
         
-        "**PROJECT BREAKDOWN**\n",
-        "The project is broken down into 5 stages which include:\n",
-        "- Data Collection and Preprocessing\n",
-        "- Exploratory Data Analysis (EDA)\n",
-        "- Feature Engineering,
-        "- Model Development & Evaluation,
-        "- Interactive Web Application"
+        st.subheader('PROJECT BREAKDOWN', divider='rainbow')
+        st.markdown("The project is broken down into 5 stages which include:
+        - Data Collection and Preprocessing\n",
+        - Exploratory Data Analysis (EDA)\n",
+        - Feature Engineering,
+        - Model Development & Evaluation,
+        - Interactive Web Application"
       """)
   
     st.header("Problem Statement")
