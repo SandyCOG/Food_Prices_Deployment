@@ -222,7 +222,7 @@ elif state.page == "Charts":
     #food_crop = st.selectbox('Select Crop Type:', df['crops'].unique())
 
     # Filter DataFrame based on selected state
-    filtered_df = df[df['crop'] == selected_crop]
+    filtered_df = df[df['crops'] == selected_crop]
 
     #st.title(f'Crop Concentration in {selected_state}')
 
