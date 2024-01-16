@@ -144,7 +144,7 @@ elif state.page == "Contributors":
         
         # Column 1
         with col1:
-            st.image(Contributors_data[i]["image"], use_column_width="auto", caption=Contributors_data[i]["name"])
+            st.image(Contributors_data[i]["image"], width=250, caption=Contributors_data[i]["name"])
             st.write(Contributors_data[i]["bio"])
             st.markdown(f"[{Contributors_data[i]['name']}'s LinkedIn]({Contributors_data[i]['link']})")
 
@@ -152,7 +152,7 @@ elif state.page == "Contributors":
         with col2:
         # Check if there is a second author in the row
             if i + 1 < len(Contributors_data):
-                st.image(Contributors_data[i + 1]["image"], width=200, caption=Contributors_data[i + 1]["name"])
+                st.image(Contributors_data[i + 1]["image"], width=250, caption=Contributors_data[i + 1]["name"])
                 st.write(Contributors_data[i + 1]["bio"])
                 st.markdown(f"[{Contributors_data[i + 1]['name']}'s LinkedIn]({Contributors_data[i + 1]['link']})")
 
@@ -163,7 +163,7 @@ elif state.page == "Contributors":
         st.write('    ')
 
     with col2:
-        st.image("Home_Page/Shungu_dhlamini.jpg", use_column_width="auto", caption='Shungu Dhlamini')
+        st.image("Home_Page/Shungu_dhlamini.jpg", width=250, caption='Shungu Dhlamini')
         st.markdown('''[Shungu Dhlamini's Linkedin](https://www.linkedin.com/in/shungu-dhlamini)''')
     with col3:
         st.write('    ')
