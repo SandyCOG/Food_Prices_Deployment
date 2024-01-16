@@ -210,11 +210,24 @@ elif state.page == "Charts":
     #USING st.bar_chart
     st.bar_chart(data=df[df["crops"]==selected_crop], x='states', y='Price/Kg (Naira)', color="#177245", width= 150, height=500, use_container_width=True)
 
-    #Line plot of Annual Rainfall accross each states
-    st.subheader("Annual Rainfall accross each states", divider='rainbow')
+    #Line plot of Annual Rainfall across each states
+    st.subheader("Annual Rainfall across each states", divider='rainbow')
     st.line_chart(df.pivot_table(index='states', columns='Year', values='Annual Rainfall mm').fillna(0), height=400)
     #st.plotly_chart(px.line(data=df, x='states', y=["Annual Rainfall mm", "Year"]), use_container_width=True)
 #st.line_chart(data=df, x='states', y=['Annual Rainfall mm', "Year"], height = 400)
+
+
+    #Plot of Crops accross each states
+    st.subheader("Crops across each State", divider='rainbow')
+    selected_state = st.selectbox('Select State:', df['states'].unique())
+
+    # Filter DataFrame based on selected state
+    filtered_df = df[df['states'] == selected_state]
+
+    st.title(f'Crop Concentration in {selected_state}')
+
+    # Scatter plot
+    st.map(filtered_df[['Latitude', 'Longitude']])
 
 # Feedback Page
 elif state.page == "Feedback":
