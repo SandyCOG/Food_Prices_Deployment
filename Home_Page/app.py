@@ -148,6 +148,8 @@ elif state.page == "Contributors":
             st.write(Contributors_data[i]["bio"])
             st.markdown(f"[{Contributors_data[i]['name']}'s LinkedIn]({Contributors_data[i]['link']})")
 
+        st.markdown("---")
+        
         # Column 2
         with col2:
         # Check if there is a second author in the row
