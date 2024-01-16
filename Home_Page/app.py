@@ -227,7 +227,7 @@ elif state.page == "Charts":
     #st.title(f'Crop Concentration in {selected_state}')
 
     # Scatter plot
-    st.map(df, latitude='Latitude', longitude='Longitude')
+    st.map(df['crops'].unique(), latitude='Latitude', longitude='Longitude')
 
 # Feedback Page
 elif state.page == "Feedback":
