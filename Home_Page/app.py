@@ -219,15 +219,15 @@ elif state.page == "Charts":
 
     #Plot of Crops accross each states
     st.subheader("Crops across each State", divider='rainbow')
-    selected_state = st.selectbox('Select State:', df['states'].unique())
+    selected_crop = st.selectbox('Select Crop Type:', df['crops'].unique())
 
     # Filter DataFrame based on selected state
-    filtered_df = df[df['states'] == selected_state]
+    filtered_df = df[df['crop'] == selected_crop]
 
     st.title(f'Crop Concentration in {selected_state}')
 
     # Scatter plot
-    st.map(df, latitude='Latitude', longitude='Longitude')
+    st.map(filtered_df, latitude='Latitude', longitude='Longitude')
 
 # Feedback Page
 elif state.page == "Feedback":
