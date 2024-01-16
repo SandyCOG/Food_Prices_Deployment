@@ -107,11 +107,9 @@ The project is broken down into 5 stages which include:
 
     st.header("Objectives", divider='rainbow')
     st.markdown("""
-The core aim of this project is to harness the potential of data and machine learning to forecast food prices in Nigeria. This predictive analysis serves as a valuable resource for consumers, policymakers, and stakeholders, empowering them to make informed, data-driven decisions. The specific objectives are:
-- To Analyse historical food price data to identify trends, seasonality, and correlations.
-- To Develop machine learning models to predict food prices for essential commodities.
-- To Create an interactive web application to visualize the data for better insights.
-- To create reports and give recommendations based on the findings.
+- Develop a Predictive Model: Build a robust machine learning model that forecasts food prices in Nigeria based on historical data.
+- Improve Decision-Making: Empower consumers, policymakers, and stakeholders with timely and accurate information to enhance decision-making related to food security and economic planning.
+- Mitigate Food Insecurity: Contribute to efforts in mitigating food insecurity by providing insights that can assist in the development of effective policies and interventions.
 """)
 
 
