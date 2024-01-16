@@ -157,8 +157,16 @@ elif state.page == "Contributors":
                 st.markdown(f"[{Contributors_data[i + 1]['name']}'s LinkedIn]({Contributors_data[i + 1]['link']})")
 
     st.subheader("Mentor", divider='rainbow')
-    st.image("Home_Page/Shungu_dhlamini.jpg", width=200, caption='Shungu Dhlamini')
+    col1, col2, col3 = st.columns([1, 3, 1])
 
+    with col1:
+        st.write('')
+
+    with col2:
+        st.image("Home_Page/Shungu_dhlamini.jpg", width=200, caption='Shungu Dhlamini')
+
+    with col3:
+        st.write('')
 
 # Charts Page
 elif state.page == "Charts":
