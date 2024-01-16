@@ -157,7 +157,7 @@ elif state.page == "Contributors":
                 st.markdown(f"[{Contributors_data[i + 1]['name']}'s LinkedIn]({Contributors_data[i + 1]['link']})")
 
     st.subheader("Mentor", divider='rainbow')
-    col1, col2, col3 = st.columns([3])
+    col1, col2, col3 = st.columns(3)
 
     with col1:
         st.write('    ')
