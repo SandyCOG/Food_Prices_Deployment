@@ -107,9 +107,9 @@ The project is broken down into 5 stages which include:
 
     st.header("Objectives", divider='rainbow')
     st.markdown("""
-- *Develop a Predictive Model*: Build a robust machine learning model that forecasts food prices in Nigeria based on historical data.
-- *Improve Decision-Making*: Empower consumers, policymakers, and stakeholders with timely and accurate information to enhance decision-making related to food security and economic planning.
-- *Mitigate Food Insecurity*: Contribute to efforts in mitigating food insecurity by providing insights that can assist in the development of effective policies and interventions.
+- **Develop a Predictive Model**: Build a robust machine learning model that forecasts food prices in Nigeria based on historical data.
+- **Improve Decision-Making**: Empower consumers, policymakers, and stakeholders with timely and accurate information to enhance decision-making related to food security and economic planning.
+- **Mitigate Food Insecurity**: Contribute to efforts in mitigating food insecurity by providing insights that can assist in the development of effective policies and interventions.
 """)
 
 
