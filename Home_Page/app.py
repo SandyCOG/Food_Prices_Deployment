@@ -163,7 +163,7 @@ elif state.page == "Contributors":
         st.write('')
 
     with col2:
-        st.image("Home_Page/Shungu_dhlamini.jpg", use_column_width=auto, caption='Shungu Dhlamini')
+        st.image("Home_Page/Shungu_dhlamini.jpg", use_column_width="auto", caption='Shungu Dhlamini')
 
     with col3:
         st.write('')
