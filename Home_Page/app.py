@@ -130,7 +130,7 @@ elif state.page == "Contributors":
     #st.image(images, use_column_width=True, caption=["some generic text"] * len(images))
     #Contributors
     Contributors_data = [
-       {"name": "Rabiat Ibrahim", "image": "Home_Page/Rabiat_ibrahim.jpg", "bio": "Rabiat Ibrahim is a dedicated machine learning/data scientist with a strong background in mathematics and statistics and a knack for uncovering insights from complex datasets. Skilled in Python, Pytorch and machine learning/neural network, with several projects available on platforms like GitHub and Kaggle", "link": "https://www.linkedin.com/in/https://www.linkedin.com/in/rabiat-ibrahim-488716ab"},
+       {"name": "Rabiat Ibrahim", "image": "Home_Page/Rabiat_ibrahim.jpg", "bio": "Rabiat Ibrahim is a dedicated machine learning/data scientist with a strong background in mathematics and statistics and a knack for uncovering insights from complex datasets. Skilled in Python, Pytorch and machine learning/neural network, with several projects available on platforms like GitHub and Kaggle", "link": "https://www.linkedin.com/in/rabiat-ibrahim-488716ab/"},
        {"name": "Sandy Om'Iniabohs", "image": "Home_Page/sandy.jpg", "bio": "Sandy Om'Iniabohs is a data and research analyst with broad-based experience across agro-allied and IT industries. She is skilled in the use of Python, SQL, Power BI, Tableau and Spreadsheets as well as in data modelling, data visualisation and machine learning to perform data analysis and make predictions.", "link": "https://linkedin.com/sandyominiabohs"},
        {"name": "Juliet Sackey", "image": "Home_Page/Juliet_sackey.jpg", "bio": "Juliet Sackey is a data analyst with scientific training, good at analysing and interpreting complex data, deriving meaningful conclusions, and communicating findings to stakeholders", "link": "https://www.linkedin.com/in/juliet-sackey-phd-23676257"}, 
         {"name": "Temitayo Badewole", "image": "Home_Page/Temi.jpg", "bio": "Temitayo Badewole is a Data scientist and advocate for gender equity for underrepresented women, particularly Teen moms. She has vast experience in data science, modelling and software development.", "link": "https://www.linkedin.com/in/temitayo-badewole-1046a768"},
@@ -160,13 +160,13 @@ elif state.page == "Contributors":
     col1, col2, col3 = st.columns([1, 3, 1])
 
     with col1:
-        st.write('')
+        st.write('    ')
 
     with col2:
         st.image("Home_Page/Shungu_dhlamini.jpg", use_column_width="auto", caption='Shungu Dhlamini')
-
+        st.markdown(f"["Shungu Dhlamini's Linkedin](https://www.linkedin.com/in/shungu-dhlamini)")
     with col3:
-        st.write('')
+        st.write('    ')
 
 # Charts Page
 elif state.page == "Charts":
