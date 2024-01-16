@@ -219,10 +219,10 @@ elif state.page == "Charts":
 
     #Plot of Crops accross each states
     st.subheader("Crops across each State", divider='rainbow')
-    food_crop = st.selectbox('Select Crop Type:', df['crops'].unique())
+    #food_crop = st.selectbox('Select Crop Type:', df['crops'].unique())
 
     # Filter DataFrame based on selected state
-    filtered_df = df[df['crop'] == food_crop]
+    filtered_df = df[df['crop'] == selected_crop]
 
     #st.title(f'Crop Concentration in {selected_state}')
 
