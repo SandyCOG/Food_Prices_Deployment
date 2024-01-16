@@ -164,7 +164,7 @@ elif state.page == "Contributors":
 
     with col2:
         st.image("Home_Page/Shungu_dhlamini.jpg", use_column_width="auto", caption='Shungu Dhlamini')
-        st.markdown(["Shungu Dhlamini's Linkedin"](https://www.linkedin.com/in/shungu-dhlamini))
+        st.markdown('''[Shungu Dhlamini's Linkedin](https://www.linkedin.com/in/shungu-dhlamini)''')
     with col3:
         st.write('    ')
 
