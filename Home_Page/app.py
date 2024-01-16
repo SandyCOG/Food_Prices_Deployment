@@ -211,7 +211,7 @@ elif state.page == "Charts":
 
     #Line plot of Annual Rainfall accross each states
     st.subheader("Annual Rainfall accross each states", divider='rainbow')
-    st.line_chart(data=df, x='states', y=['Annual Rainfall mm', "Year"], color="Year")
+    st.line_chart(data=df, x='states', y=['Annual Rainfall mm', "Year"], height = 400)
 
 # Feedback Page
 elif state.page == "Feedback":
