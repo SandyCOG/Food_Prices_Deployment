@@ -156,6 +156,9 @@ elif state.page == "Contributors":
                 st.write(Contributors_data[i + 1]["bio"])
                 st.markdown(f"[{Contributors_data[i + 1]['name']}'s LinkedIn]({Contributors_data[i + 1]['link']})")
 
+    st.subheader("Mentor", divider='rainbow')
+    st.image("Home_Page/Shungu_Dhlamini.jpg", width=200, caption='Shungu Dhlamini')
+
 
 # Charts Page
 elif state.page == "Charts":
