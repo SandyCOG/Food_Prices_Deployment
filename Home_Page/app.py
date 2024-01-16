@@ -212,7 +212,7 @@ elif state.page == "Charts":
 
     #Line plot of Annual Rainfall accross each states
     st.subheader("Annual Rainfall accross each states", divider='rainbow')
-    st.line_chart(df.pivot_table(index='states', columns='Year', values='Annual Rainfall mm').fillna(0))
+    st.line_chart(df.pivot_table(index='states', columns='Year', values='Annual Rainfall mm').fillna(0), height=400)
     #st.plotly_chart(px.line(data=df, x='states', y=["Annual Rainfall mm", "Year"]), use_container_width=True)
 #st.line_chart(data=df, x='states', y=['Annual Rainfall mm', "Year"], height = 400)
 
