@@ -69,7 +69,7 @@ state = SessionState()
 # Sidebar for page Navigation -labels the sidebar menu
 with st.sidebar:
     st.title("Menus")
-    pages = ["Introduction", "Contributors", "Charts", "Prediction", "Feedback"]
+    pages = ["Introduction", "Contributors", "Charts", "Predictions", "Feedback"]
     selected_page = st.sidebar.radio("Go to:", pages)
 
 # Update page in the session state
@@ -227,6 +227,10 @@ elif state.page == "Charts":
     # Scatter plot
     st.map(filtered_df, latitude='Latitude', longitude='Longitude')
 
+
+elif state.page == "Predictions":
+    st.header("Predictions", divider='rainbow')
+    
 # Feedback Page
 elif state.page == "Feedback":
     st.title("Food Prediction Model")
