@@ -242,7 +242,7 @@ elif state.page == "Feedback":
     name = st.text_input("Name:")
     email = st.text_input("Email:")
     feedback = st.text_area("Feedback:")
-    submit_button = st.button("Submit Feedback")
+    #submit_button = st.button("Submit Feedback")
 
     # Handle feedback submission
     if st.button("Submit"):
