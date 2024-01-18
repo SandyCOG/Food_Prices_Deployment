@@ -236,7 +236,7 @@ elif state.page == "Feedback":
     st.title("Food Prediction Model")
 
     # Page content
-    st.header("Feedback Form", divider='rainbow')
+    st.header("Feedback Form", help="Feel free to share your thoughts, suggestions, or report issues.", divider='rainbow')
 
     # Feedback form
     name = st.text_input("Name:")
@@ -245,12 +245,23 @@ elif state.page == "Feedback":
     submit_button = st.button("Submit Feedback")
 
     # Handle feedback submission
-    if submit_button:
-        # Save feedback to CSV file
-        feedback_df = pd.DataFrame({'Name': [name], 'Email': [email], 'Feedback': [feedback]})
-        feedback_df.to_csv('feedback.csv', mode='a', index=False, header=not pd.read_csv('feedback.csv').exists())
-
-        st.success("Feedback submitted successfully!")
+    if st.button("Submit"):
+        if name and email and subject and feedback:
+            # Load existing data from CSV
+            df = pd.read_csv(csv_file_path)
+        
+            # Append new entry
+            new_entry = {'Name': name, 'Email': email, 'Subject': subject, 'Feedback': feedback}
+            # df = df.append(new_entry, ignore_index=True)
+            df = pd.concat([df, pd.DataFrame([new_entry])], ignore_index=True)
+        
+            # Save updated data to CSV
+            df.to_csv(csv_file_path, index=False)
+        
+            st.success("Feedback submitted successfully!")
+        else:
+            st.warning("Please fill out all fields.")
+            
 
     st.header("Repository Link")
     st.write("Add your repository link here.")
