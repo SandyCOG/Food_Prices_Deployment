@@ -234,9 +234,9 @@ elif state.page == "Predictions":
 # Feedback Page
 elif state.page == "Feedback":
     st.title("Food Prediction Model")
-
+    
     # Page content
-    st.header("Feedback Form", help="Feel free to share your thoughts, suggestions, or report issues.", divider='rainbow')
+    st.header("Feedback Form :envelope_with_arrow:", help="Feel free to share your thoughts, suggestions, or report issues.", divider='rainbow')
 
     # Feedback form
     name = st.text_input("Name:")
