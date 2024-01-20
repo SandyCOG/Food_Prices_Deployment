@@ -235,6 +235,12 @@ elif state.page == "Feedback":
     st.title("Food Prediction Model")
     
     # Page content
+    # Check if the CSV file exists, if not, create one
+    csv_file_path = 'src/data/feedback.csv'
+    if not os.path.isfile(csv_file_path):
+        df = pd.DataFrame(columns=['Name', 'Email', 'Feedback'])
+        df.to_csv(csv_file_path, index=False)
+        
     st.header("Feedback Form :envelope_with_arrow:", help="Feel free to share your thoughts, suggestions, or report issues.", divider='rainbow')
 
     # Feedback form
