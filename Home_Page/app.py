@@ -229,7 +229,23 @@ elif state.page == "Charts":
 
 elif state.page == "Predictions":
     st.header("Predictions", divider='rainbow')
-    
+    import streamlit as st
+
+    # Load the pre-trained model
+    with open('food-price-prediction-model.pk1', 'rb') as file:
+        model = pickle.load(file)
+
+    # Add user input elements (e.g., sliders, dropdowns) for model input features
+    user_input = st.text_input("Enter some input:", "default_value")
+
+    # When the user clicks a button or interacts with an input element, make a prediction
+    if st.button("Predict"):
+        #predictions based on user input
+        prediction = model.predict([user_input])
+
+        # Display the prediction
+        st.write(f"Predicted Price: {prediction[0]}")
+
 # Feedback Page
 elif state.page == "Feedback":
     st.title("Food Prediction Model")
