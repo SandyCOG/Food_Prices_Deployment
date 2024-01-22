@@ -236,12 +236,14 @@ elif state.page == "Predictions":
         model = pickle.load(file)
 
     # Add user input elements (e.g., sliders, dropdowns) for model input features
-    user_input = st.text_input("Enter some input:", "default_value")
+    Date = st.text_input("Enter a date:", "default_value")
+    Crops = st.select_box("Choose crop:", df['crops'].unique())
+    State = st.select_box("Choose state:", df['states'].unique())
 
     # When the user clicks a button or interacts with an input element, make a prediction
     if st.button("Predict"):
         #predictions based on user input
-        prediction = model.predict([user_input])
+        prediction = model.predict([[Date, Crops, State])
 
         # Display the prediction
         st.write(f"Predicted Price: {prediction[0]}")
