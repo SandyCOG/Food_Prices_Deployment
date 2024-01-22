@@ -1,6 +1,7 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
+import pickle
 #import plotly as px
 #import seaborn as sns
 #import matplotlib.pyplot as plt
@@ -229,7 +230,6 @@ elif state.page == "Charts":
 
 elif state.page == "Predictions":
     st.header("Predictions", divider='rainbow')
-    import streamlit as st
 
     # Load the pre-trained model
     with open('Home_Page/food-price-prediction-model.pkl', 'rb') as file:
