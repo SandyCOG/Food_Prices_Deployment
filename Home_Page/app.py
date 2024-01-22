@@ -243,7 +243,7 @@ elif state.page == "Predictions":
     # When the user clicks a button or interacts with an input element, make a prediction
     if st.button("Predict"):
         #predictions based on user input
-        prediction = model.predict([[Date, Crops, State])
+        prediction = model.predict([[Date, Crops, State]])
 
         # Display the prediction
         st.write(f"Predicted Price: {prediction[0]}")
