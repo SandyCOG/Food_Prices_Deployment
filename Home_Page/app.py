@@ -232,7 +232,7 @@ elif state.page == "Predictions":
     import streamlit as st
 
     # Load the pre-trained model
-    with open('food-price-prediction-model.pk1', 'rb') as file:
+    with open('Home_Page/food-price-prediction-model.pkl', 'rb') as file:
         model = pickle.load(file)
 
     # Add user input elements (e.g., sliders, dropdowns) for model input features
