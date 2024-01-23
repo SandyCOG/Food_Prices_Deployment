@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import pickle
-import sckit-learn
+#import sckit-learn
 #import plotly as px
 #import seaborn as sns
 #import matplotlib.pyplot as plt
