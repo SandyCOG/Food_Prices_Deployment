@@ -1,8 +1,9 @@
-pip install -r requirements.txt
+
 import streamlit as st
 import numpy as np
 import pandas as pd
 import pickle
+pip install -r requirements.txt
 #import sckit-learn
 #import plotly as px
 #import seaborn as sns
