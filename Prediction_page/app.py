@@ -17,7 +17,7 @@ st.markdown(html_temp, unsafe_allow_html=True)
 
 st.write("\n\n"*2)
 
-filename = 'food-price-prediction-Model.pkl'
+filename = 'food-price-prediction-model.pkl'
 model = pickle.load(open(filename, 'rb'))
 
 with st.sidebar:
