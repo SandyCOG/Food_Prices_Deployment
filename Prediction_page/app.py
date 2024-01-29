@@ -41,7 +41,7 @@ with st.sidebar:
    # "km": "km Traveled",
    # "Gears": "Gears",
   #  "Gearing_Type": "Gearing Type"
-}
+#}
 
 #df_show = df.copy()
 #df_show.rename(columns = cols, inplace = True)
