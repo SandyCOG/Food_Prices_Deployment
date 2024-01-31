@@ -6,7 +6,7 @@ import numpy as np
 from PIL import Image
 
 import sklearn
-from xgboost import XGBRegressor
+import XGBRegressor
 import pickle
 
 html_temp = """
