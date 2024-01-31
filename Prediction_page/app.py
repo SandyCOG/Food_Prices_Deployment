@@ -29,7 +29,14 @@ with st.sidebar:
     Crops = st.select_box("Choose crop:", df['crops'].unique())
     State = st.select_box("Choose state:", df['states'].unique())
 
+# When the user clicks a button or interacts with an input element, make a prediction
+ if st.button("Predict"):
+     #predictions based on user input
+     prediction = model.predict([[Date, Crops, State]])
 
+    # Display the prediction
+     st.write(f"Predicted Price: {prediction[0]}")
+        
 #my_dict = {"make_model":make_model, "hp_kW":hp_kW, "age":age, "km":km, "Gears":Gears, "Gearing_Type":Gearing_Type}
 #df = pd.DataFrame.from_dict([my_dict])
 
