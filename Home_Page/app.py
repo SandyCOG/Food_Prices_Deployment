@@ -3,8 +3,9 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import pickle
+import os
 
-#import sckit-learn
+import sklearn
 #import plotly as px
 #import seaborn as sns
 #import matplotlib.pyplot as plt
