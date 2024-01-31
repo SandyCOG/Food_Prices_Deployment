@@ -3,7 +3,7 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import pickle
-python -m pip install (requirements.txt)
+pip install requirements.txt
 #import sckit-learn
 #import plotly as px
 #import seaborn as sns
