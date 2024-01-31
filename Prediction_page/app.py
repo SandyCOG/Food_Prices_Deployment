@@ -5,7 +5,9 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 from PIL import Image
-#from xgboost import XGBRegressor
+
+import sklearn
+import xgboost
 import pickle
 
 html_temp = """
