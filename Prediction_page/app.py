@@ -6,6 +6,7 @@ import numpy as np
 from PIL import Image
 
 import sklearn
+import xgboost
 from xgboost import XGBRegressor
 import pickle
 
