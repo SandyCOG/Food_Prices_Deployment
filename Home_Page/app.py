@@ -5,7 +5,7 @@ import pandas as pd
 import pickle
 import os
 
-import sklearn
+#import sklearn
 #import plotly as px
 #import seaborn as sns
 #import matplotlib.pyplot as plt
