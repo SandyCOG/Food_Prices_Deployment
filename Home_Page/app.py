@@ -278,7 +278,7 @@ elif state.page == "Feedback":
             df = pd.read_csv(csv_file_path)
         
             # Append new entry
-            new_entry = {'Name': name, 'Email': email, 'Subject': subject, 'Feedback': feedback}
+            new_entry = {'Name': name, 'Email': email, 'Feedback': feedback}
             # df = df.append(new_entry, ignore_index=True)
             df = pd.concat([df, pd.DataFrame([new_entry])], ignore_index=True)
         
