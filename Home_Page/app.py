@@ -237,7 +237,7 @@ elif state.page == "Predictions":
 
     # Load the pre-trained model
     with open('Home_Page/food-price-prediction-model.pkl', 'rb') as file:
-        model = pickle.load(open(file, 'rb'))
+        model = pickle.load(file)
 
     def main():
         st.title("Food Prices Prediction")
