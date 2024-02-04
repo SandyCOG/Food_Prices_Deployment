@@ -237,21 +237,37 @@ elif state.page == "Predictions":
 
     # Load the pre-trained model
     with open('Home_Page/food-price-prediction-model.pkl', 'rb') as file:
-        model = pickle.load(file)
+        model = pickle.load(open(file, 'rb'))
 
-    # Add user input elements (e.g., sliders, dropdowns) for model input features
-    Date = st.text_input("Enter a date:", "default_value")
-    Crops = st.select_box("Choose crop:", df['crops'].unique())
-    State = st.select_box("Choose state:", df['states'].unique())
+    def main():
+        st.title("Food Prices Prediction")
 
-    # When the user clicks a button or interacts with an input element, make a prediction
-    if st.button("Predict"):
+        #input variables
+        Annual_Rainfall_mm = st.number_input("Type a value")
+        Season_Length_Days = st.number_input("Type a value")
+        Latitude = st.number_input("Type a value")
+        Longitude = st.number_input("Type a value")
+        Month = st.number_input("Enter a numerical value for month")
+        Inflation_rate_all_item_annual = st.number_input("Type a value")
+        Inflation_rate_all_item_monthly_avg = st.number_input("Type a value")
+        Inflation_rate_food_item_monthly_avg = st.number_input("Type a value")
+        Inflation_rate_food_item_monthly_avg_1 = st.number_input("Type a value")
+        Date = st.text_input("Enter a date:", "default_value")
+        Crops = st.selectbox("Choose crop:", df['crops'].unique())
+        State = st.selectbox("Choose state:", df['states'].unique())
+
+        # When the user clicks a button or interacts with an input element, make a prediction
+        if st.button("Predict"):
         #predictions based on user input
-        prediction = model.predict([[Date, Crops, State]])
+            makemodel = model.predict([[Annual_Rainfall_mm, Season_Length_Days, Latitude, Longitude, Month, Inflation_rate_all_item_annual, Inflation_rate_all_item_monthly_avg, Inflation_rate_food_item_monthly_avg, Inflation_rate_food_item_monthly_avg_1, Date, Crops, State]])
 
         # Display the prediction
-        st.write(f"Predicted Price: {prediction[0]}")
+            st.write(f"Predicted Price: {makemodel[0]}")  
+            st.success('Price successfully predicted')
 
+    if __name__== '__main__':
+        main()
+        
 # Feedback Page
 elif state.page == "Feedback":
     st.title("Food Prediction Model")
