@@ -8,4 +8,4 @@ scikit_learn
 streamlit==1.10.0
 streamlit_option_menu
 Pillow==9.1.1
- 
+xgboost
