@@ -7,8 +7,8 @@ Created on Mon Feb  5 10:36:39 2024
 """
 
 import streamlit as st
-import pandas as pd
-import numpy as np
+#import pandas as pd
+#import numpy as np
 
 import pickle
 
