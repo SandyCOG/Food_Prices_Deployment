@@ -236,7 +236,7 @@ elif state.page == "Predictions":
     st.header("Predictions", divider='rainbow')
 
     # Load the pre-trained model
-    with open('Home_Page/food-price-prediction-model.pkl', 'rb') as file:
+    with open('xgb_pipeline.pkl', 'rb') as file:
         model = pickle.load(file)
 
     def main():
