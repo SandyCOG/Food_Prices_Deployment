@@ -1,11 +1,1 @@
-python
-seaborn
-xgboost==1.0.2
-matplotlib==3.5.2
-numpy==1.21.6
-pandas==1.3.3
-plotly==5.8.2
-sklearn==0.0
-scikit_learn==1.0.2
-streamlit==1.15.0
-streamlit_option_menu==0.3.2
+
