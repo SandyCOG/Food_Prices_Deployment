@@ -219,7 +219,7 @@ elif state.page == "Charts":
 #st.line_chart(data=df, x='states', y=['Annual Rainfall mm', "Year"], height = 400)
 
 
-    #Plot of Crops accross each states
+    #Plot of Crops across each states
     st.subheader("Crops across each State", divider='rainbow')
     #food_crop = st.selectbox('Select Crop Type:', df['crops'].unique())
 
